@@ -14,19 +14,19 @@ function wp_alibee_skeletonloader_import() {
 
     // jQuery est ajouté s'il n'a pas été chargé
     if (!wp_script_is('jquery', 'registered')) {
-        wp_deregister_script('jquery');
         wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), null, true);
     }
 
+    // jQuery UI est ajouté s'il n'a pas été chargé
     if (!wp_script_is('jquery-ui', 'registered')) {
-        wp_deregister_script('jquery-ui');
         wp_register_script('jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js', array('jquery'), null, true);
     }
 
+    // Importation des scripts et feuilles de style
     wp_enqueue_script('wp-skeleton-loader-js', $domain . '/wp-content/plugins/wp-skeleton-loader/js/script.js', array('jquery'), true);
     wp_enqueue_style('wp-skeleton-loader-css', $domain . '/wp-content/plugins/wp-skeleton-loader/css/style.css', array(), 'all');
 }
 
-// Injection du script et du style dans la balise "head" du site
+// Injection du script et des feuilles de style dans la balise "head" du site
 add_action('wp_enqueue_scripts', 'wp_alibee_skeletonloader_import');
 ?>
