@@ -23,8 +23,8 @@ function wp_alibee_skeletonloader_import() {
     }
 
     // Importation des scripts et feuilles de style
-    wp_enqueue_script('wp-skeleton-loader-js', $domain . '/wp-content/plugins/wp-skeleton-loader/js/script.js', array('jquery'), true);
-    wp_enqueue_style('wp-skeleton-loader-css', $domain . '/wp-content/plugins/wp-skeleton-loader/css/style.css', array(), 'all');
+    wp_enqueue_script('wp-skeleton-loader', $domain . '/wp-content/plugins/wp-skeleton-loader/js/script.js', array('jquery'), true);
+    wp_enqueue_style('wp-skeleton-loader', $domain . '/wp-content/plugins/wp-skeleton-loader/css/style.css', array(), 'all');
 }
 
 // Injection du script et des feuilles de style dans la balise "head" du site
