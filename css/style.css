@@ -1,0 +1,84 @@
+/*
+   ╔══════════════════════╗
+   ║  WP Skeleton Loader  ║
+   ║    © 2024 Alibee     ║
+   ║ Tous droits réservés ║
+   ╚══════════════════════╝
+*/
+.skeleton-loader img { visibility: hidden; }
+.skeleton-loader .skeleton-overlay,
+.skeleton-loader i,
+.skeleton-loader a,
+.skeleton-loader p,
+.skeleton-loader h1,
+.skeleton-loader h2,
+.skeleton-loader h3,
+.skeleton-loader h4,
+.skeleton-loader h5,
+.skeleton-loader h6,
+.skeleton-loader span,
+.skeleton-loader table,
+.skeleton-loader tr,
+.skeleton-loader td,
+.skeleton-loader th,
+.skeleton-loader thead,
+.skeleton-loader tbody,
+.skeleton-loader input,
+.skeleton-loader select,
+.skeleton-loader button,
+.skeleton-loader label {
+    position: relative !important;
+    color: transparent !important;
+    border-color: transparent !important;
+    z-index: 0 !important;
+    border-radius: 4px;
+    box-shadow: unset !important;
+    background: unset !important;
+    pointer-events: none !important;
+    background-color: #f0f0f0 !important;
+    animation: fadeInAnimation 0.5s linear 1;
+    border: none !important;
+}
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.skeleton-loader .skeleton-overlay::after,
+.skeleton-loader i::after,
+.skeleton-loader a::after,
+.skeleton-loader p::after,
+.skeleton-loader h1::after,
+.skeleton-loader h2::after,
+.skeleton-loader h3::after,
+.skeleton-loader h4::after,
+.skeleton-loader h5::after,
+.skeleton-loader h6::after,
+.skeleton-loader span::after,
+.skeleton-loader table::after,
+.skeleton-loader tr::after,
+.skeleton-loader td::after,
+.skeleton-loader th::after,
+.skeleton-loader thead::after,
+.skeleton-loader tbody::after,
+.skeleton-loader input::after,
+.skeleton-loader select::after,
+.skeleton-loader button::after,
+.skeleton-loader label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+    background-position-x: 180%;
+    background-size: 200% 100%;
+    animation: 1s skeletonLoadingAnimation ease-in-out infinite;
+    z-index: 999;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+@keyframes skeletonLoadingAnimation {
+    0% { background-position-x: -100%; }
+    100% { background-position-x: 200%; }
+}
