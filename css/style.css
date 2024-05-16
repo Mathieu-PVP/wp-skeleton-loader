@@ -5,6 +5,8 @@
    ║ Tous droits réservés ║
    ╚══════════════════════╝
 */
+
+/* On rend les éléments le plus transparent possible */
 .skeleton-loader img { visibility: hidden; }
 .skeleton-loader .skeleton-overlay,
 .skeleton-loader i,
@@ -39,10 +41,12 @@
     animation: fadeInAnimation 0.5s linear 1;
     border: none !important;
 }
+/* Petite animation de fondu entrant */
 @keyframes fadeInAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+/* Superposition des éléments avec l'effet skeleton */
 .skeleton-loader .skeleton-overlay::after,
 .skeleton-loader i::after,
 .skeleton-loader a::after,
@@ -78,6 +82,7 @@
     border-radius: 4px;
     padding: 2px 5px;
 }
+/* Animation de l'effet skeleton */
 @keyframes skeletonLoadingAnimation {
     0% { background-position-x: -100%; }
     100% { background-position-x: 200%; }
