@@ -3,8 +3,8 @@ Un plugin qui permet de masquer temporairement les éléments de vos pages avec 
 
 ## Installation
 
-1) Télécharger le plugin et extraire le fichier .zip
-2) Renommer le dossier racine `wp-skeleton-loader` puis glissez-le dans le dossier : `<wordpress>/wp-content/plugins/`.
+1) Téléchargez le plugin, puis extrayez le fichier .zip
+2) Renommez le dossier racine `wp-skeleton-loader` puis glissez-le dans le dossier : `<wordpress>/wp-content/plugins/`.
 3) Activez-le via l'onglet "Extensions installées" dans "Extensions". `Extensions > Extensions installées`
 
 ## Utilisation
